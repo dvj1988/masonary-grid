@@ -1,0 +1,61 @@
+.header {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+button.log-out {
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: cornflowerblue;
+}
+
+button:focus {
+  outline: none;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.tiles-wrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: 10px;
+}
+.tile {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.tile img {
+  width: 300px;
+}
+
+.tile.selected {
+  border: 1px solid cornflowerblue;
+}
+.page-body {
+  text-align: center;
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: white;
+}
+.hide {
+  display: none;
+}
